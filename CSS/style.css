@@ -124,6 +124,7 @@ img{
     text-align: center;
     font-size: 1.8rem;
     color: var(--blanco);
+    text-transform: uppercase;
 }
 
 @media (min-width:768px){
