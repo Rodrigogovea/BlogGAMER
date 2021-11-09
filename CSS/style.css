@@ -1,6 +1,7 @@
 :root {
-    --feunteTitutlo: 'PT Sans', sans-serif;
+    --feunteTitulo: 'PT Sans', sans-serif;
     --fuenteParrafo: 'Open Sans', sans-serif;
+    --fuenteTitulo2: 'Red Hat Mono', sans-Serif;
 
     --primario: #784D3C;
     --blanco: #FFFFFF;
@@ -33,7 +34,7 @@ a{
 }
 
 h1, h2, h3, h4{
-    font-family: var(--feunteTitutlo);
+    font-family: var(--fuenteTitulo2);
     line-height: 1.2;
 }
 
@@ -68,7 +69,7 @@ img{
 
 
 .header{
-    background-image: url(../img/banner.jpg);
+    background-image: url(../img/banner_3.jpg);
     height: 60rem;
     background-size: cover;
     background-repeat: no-repeat;
