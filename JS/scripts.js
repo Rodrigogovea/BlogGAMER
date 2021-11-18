@@ -7,30 +7,50 @@
 // console.log(typeof(edad));
 // console.log(typeof(unBoleano));
 
-const nombreProducto = "Monitor";
-const precioProducto = 5000;
-const categoriaProducto = "Gamer";
+// const nombreProducto = "Monitor";
+// const precioProducto = 5000;
+// const categoriaProducto = "Gamer";
 
-// console.log(nombreProducto);
-// console.log(precioProducto);
-// console.log(categoriaProducto);
+// // console.log(nombreProducto);
+// // console.log(precioProducto);
+// // console.log(categoriaProducto);
 
-const producto = {
-    nombre : "Monitor",
-    precio : 5000,
-    categoria : "Gamer"
+// const producto = {
+//     nombre : "Monitor",
+//     precio : 5000,
+//     categoria : "Gamer"
+// }
+
+// // console.log(producto);
+
+// console.log(producto.nombre);
+
+
+
+function descargarContenido() {
+    return new Promise ( resolve => {
+        console.log('Descargando contenido... por favor espere!');
+
+        setTimeout( () => {
+            resolve('El contenido fue descargado completamente!');
+        }, 5000);
+
+    });
 }
 
-// console.log(producto);
+async function app(){
+    try {
+        const resultado = await descargarContenido();
+        console.log(resultado);
+    } catch(error) {
+        console.log(error);
+    }
 
-console.log(producto.nombre);
+}
 
+app();
 
-
-
-
-
-
+console.log('Este código no se bloquea! ');
 
 
 
