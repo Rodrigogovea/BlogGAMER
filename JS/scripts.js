@@ -1,4 +1,73 @@
+const miArreglo = [0,5,4,2,7,41,9];
+miArreglo.map(function(valor)
+{
+    console.log(valor);
+});
+
+
+// miArreglo.forEach(function(valor)
+// {
+//     console.log(valor);
+// });
+
+
+
+
+
+
+// for(let i = 0; i<miArreglo.length; i++)
+// {
+//     console.log(miArreglo[i]);
+// }
+
+
+
+// let i = 0;
+// do
+// {
+//     console.log(`El iterador es: ${i}`);
+//     i++;
+// }while(i<=10);
+
+
+// const calificacion = '100';
+
+// if(calificacion === 100)
+// {
+//     console.log("Felicidades!!!")
+// }
+// else
+// {
+//     console.log("Echale más ganas...")
+// }
+
+// const opcion = 'opcion 1';
+
+// switch(opcion)
+// {
+//     case 'opcion 1':
+//         console.log("Seleccionaste la opción 1");
+//         break;
+//     case 'opcion 2':
+//         console.log("Seleccionaste la opción 2");
+//         break;
+//     default:
+//         console.log("Opción no válida");
+//         break;
+// }
+
 //alert("Hola mundo desde JS, desde archivo externo...");
+
+// const numeros = [1,2,3,4,5,6,7,8];
+// // console.log(numeros);
+
+// //hay otra forma de mostrar los arreglos:
+// console.table(numeros);
+
+// const miArreglo = ["Un string", 10, true, [1,2,3,4], {name:"Rodrigo",lasName:"Govea"},null];
+// console.log(miArreglo);
+
+// console.log(miArreglo[2]);
 
 // var nombre = "Rodrigo";
 // var edad = "34";
@@ -27,30 +96,30 @@
 
 
 
-function descargarContenido() {
-    return new Promise ( resolve => {
-        console.log('Descargando contenido... por favor espere!');
+// function descargarContenido() {
+//     return new Promise ( resolve => {
+//         console.log('Descargando contenido... por favor espere!');
 
-        setTimeout( () => {
-            resolve('El contenido fue descargado completamente!');
-        }, 5000);
+//         setTimeout( () => {
+//             resolve('El contenido fue descargado completamente!');
+//         }, 5000);
 
-    });
-}
+//     });
+// }
 
-async function app(){
-    try {
-        const resultado = await descargarContenido();
-        console.log(resultado);
-    } catch(error) {
-        console.log(error);
-    }
+// async function app(){
+//     try {
+//         const resultado = await descargarContenido();
+//         console.log(resultado);
+//     } catch(error) {
+//         console.log(error);
+//     }
 
-}
+// }
 
-app();
+// app();
 
-console.log('Este código no se bloquea! ');
+// console.log('Este código no se bloquea! ');
 
 
 
