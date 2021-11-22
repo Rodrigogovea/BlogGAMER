@@ -1,8 +1,113 @@
-const miArreglo = [0,5,4,2,7,41,9];
-miArreglo.map(function(valor)
-{
-    console.log(valor);
-});
+const multiplicar2 = (numero1, numero2) => console.log(numero1 * numero2 );
+
+multiplicar2(5,5);
+
+
+
+
+
+// function multiplicar(numero1, numero2)
+// {
+//     return numero1 * numero2;
+// }
+
+// const resultado = multiplicar(5,10);
+// console.log(resultado);
+
+
+
+
+
+
+
+// const telefono = {
+//     hacerllamada : function(numeroTelefonico){
+//         console.log(`Llamando al número: ${numeroTelefonico}`);
+//     },
+//     enviarMensaje : function(mensaje,numeroTelefonico){
+//         console.log(`Enviando mensaje: ${mensaje} a: ${numeroTelefonico}`);
+//     },
+//     abriraPlicacion : function(idApp){
+//         console.log(`Abriendo aplicación: ${idApp}`);
+//     }
+// }
+// //por eso se llaman métodos de propiedad. 
+
+// telefono.hacerllamada(3511530922);
+// telefono.enviarMensaje("Hola",3511530922);
+// telefono.abriraPlicacion(254825);
+
+
+
+
+
+
+
+
+
+
+
+// const numero1 = 20;
+// const numero2 = "20";
+
+// console.log(`Estó es un number: ${numero1}`);
+// console.log(`Estó es un String: ${numero1}`);
+
+// console.log ( parseInt(numero2) ); //parseInt() es una función.
+// console.log(numero1.toString() ); //esto es un método .toString(). 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// function multiplicar(){
+//     console.log( 5 * 5 );
+// }
+
+// multiplicar();
+
+// const multiplicar2 = function() {
+//     console.log( 10 * 10 );
+// }
+// multiplicar2();
+
+// (function() {
+//     console.log(9 * 9);
+// })();
+
+// const miArreglo = [0,5,4,2,7,41,9];
+
+// //diferencias entre forEach y map
+
+// const arreglo2 = miArreglo.forEach(function(miArreglo));
+// // const arreglo3 = miArreglo.map(valor);
+
 
 
 // miArreglo.forEach(function(valor)
