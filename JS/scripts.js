@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 const boton =  document.querySelector('#boton1');
 
 boton.addEventListener('click',() => {
@@ -62,6 +63,22 @@ if(Notification.permission == 'granted') {
 
 
 
+=======
+// const clientes = [
+//     {nombre: "Rodrigo",apellido: "Govea"},
+//     {nombre: "Juan",apellido: "Garcia"},
+//     {nombre: "Ana",apellido: "Segundo"},
+//     {nombre: "Pablo",apellido: "Guerra"}
+// ];
+
+// const arrayClientes = clientes.forEach( cliente => cliente.nombre);
+
+
+// const array2Clientes = clientes.map( cliente => cliente.nombre);
+
+// console.log(arrayClientes); //usando forEach
+// console.log(array2Clientes); //usando map
+>>>>>>> d879583bffc38ae4128ae9b6a593405523e063db
 
 // const multiplicar2 = (numero1, numero2) => console.log(numero1 * numero2 );
 
