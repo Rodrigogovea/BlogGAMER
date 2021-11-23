@@ -1,6 +1,21 @@
-const multiplicar2 = (numero1, numero2) => console.log(numero1 * numero2 );
+// const clientes = [
+//     {nombre: "Rodrigo",apellido: "Govea"},
+//     {nombre: "Juan",apellido: "Garcia"},
+//     {nombre: "Ana",apellido: "Segundo"},
+//     {nombre: "Pablo",apellido: "Guerra"}
+// ];
 
-multiplicar2(5,5);
+// const arrayClientes = clientes.forEach( cliente => cliente.nombre);
+
+
+// const array2Clientes = clientes.map( cliente => cliente.nombre);
+
+// console.log(arrayClientes); //usando forEach
+// console.log(array2Clientes); //usando map
+
+// const multiplicar2 = (numero1, numero2) => console.log(numero1 * numero2 );
+
+// multiplicar2(5,5);
 
 
 
