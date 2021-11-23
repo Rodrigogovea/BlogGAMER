@@ -1,6 +1,71 @@
-const multiplicar2 = (numero1, numero2) => console.log(numero1 * numero2 );
+const boton =  document.querySelector('#boton1');
 
-multiplicar2(5,5);
+boton.addEventListener('click',() => {
+    //console.log('Diste click');
+    Notification.requestPermission()
+        .then(resultado => console.log(`El resultado es: ${resultado}`)); 
+});
+
+
+if(Notification.permission == 'granted') {
+    new Notification('Esto es una notificación',{
+        icon: '../img/logo_2_big.png',
+        body: 'Mensaje'
+    })
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// const usuarioAutenticado = new Promise ( (resolve, reject) => {
+//     const auth = true;
+//     if(auth){
+//         resolve("Usuario autenticado");
+//     } else {
+//         reject("No has iniciado sesión");
+//     }
+// });
+
+
+// console.log(usuarioAutenticado);
+
+// usuarioAutenticado
+//     .then(resultado => console.log(resultado))
+//     .catch( error => console.log(error))
+
+
+//Pending : No se ha cumplido, ni se ha rechazado
+//Fullfiles : Ya se cumplió
+//rejected  : No se cumplio. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// const multiplicar2 = (numero1, numero2) => console.log(numero1 * numero2 );
+
+// multiplicar2(5,5);
 
 
 
