@@ -171,26 +171,26 @@ img{
     background-color: var(--primario);
 }
 
-.cursos{
+.eventos{
     list-style: none;
 }
 
-.widget-curso{
+.widget-evento{
     border-bottom: 1px solid var(--gris);
     margin-bottom: 2rem;
 }
 
-.widget-curso:last-of-type{
+.widget-evento:last-of-type{
     border: none;
     margin-bottom: 0;
 }
 
-.widget-curso__label{
+.widget-evento__label{
     font-family: var(--feunteTitutlo);
     font-weight: 700;
 }
 
-.widget-curso__info{
+.widget-evento__info{
     font-weight: 400;
 }
 

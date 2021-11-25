@@ -1,0 +1,25 @@
+{
+
+    "estudiantes" : [
+        {
+            "NC" : "05010269",
+            "Nombre" : "Rodrigo",
+            "Carrera" : "ISC"
+        },
+        {
+            "NC" : "05010270",
+            "Nombre" : "Raul",
+            "Carrera" : "ISC"
+        },
+        {
+            "NC" : "05010271",
+            "Nombre" : "Roman",
+            "Carrera" : "ISC"
+        },
+        {
+            "NC" : "05010273",
+            "Nombre" : "Karen",
+            "Carrera" : "ISC"
+        }
+    ]
+}
