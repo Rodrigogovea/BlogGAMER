@@ -27,19 +27,14 @@ formulario.addEventListener('submit', function(evento){
     evento.preventDefault();
     const {nombre, gamerTag,raza,correo,mensaje} = datos;
     if(nombre === '' || gamerTag === '' || correo === '' || raza === '' || mensaje === ''){
-        // console.log('Todos los campos son obligatorios');
         mostrarError('¡Todos los campos son obligatorios!');
         return;
     }
     envioCorrecto('Los datos han sido enviados correctamentes');
-    // console.log('Enviando formulario');
 });
 function leerTexto(e){
     datos[e.target.id] = e.target.value;
-    //console.log(datos);
 }
-
-
 function mostrarError(mensaje){
     const errorFormulario = document.createElement('P');
     errorFormulario.textContent = mensaje;
@@ -49,7 +44,6 @@ function mostrarError(mensaje){
         errorFormulario.remove();
     },5000);
     formulario.appendChild(errorFormulario);
-    // console.log(error);
 }
 
 function envioCorrecto(mensaje){
