@@ -7,6 +7,8 @@
     --blanco: #FFFFFF;
     --negro: #000000;
     --gris: #D2D3DD;
+    --error: #B90000;
+    --correcto: #4AB900;
 }
 
 html{
@@ -76,15 +78,32 @@ img{
     background-position: center center;
 }
 
+.header__registro{
+    background-image: url(../img/sc2-lp-video-preview.webp);
+    height: 40rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
 .header__texto{
     text-align: center;
     color: var(--blanco);
     margin-top: 5rem;
 }
 
+.header__texto--registro{
+    text-align: center;
+    color: var(--blanco);
+    margin-top: 6rem;
+}
+
 @media (min-width:768px){
     .header__texto{
         margin-top: 15rem;
+    }
+    .header__texto--registro{
+        margin-top: 10rem;
     }
 }
 
@@ -133,6 +152,12 @@ img{
         grid-template-columns: 2fr 1fr;
         column-gap: 4rem;
     }
+}
+
+.contenido-registro{
+    display: grid;
+    grid-template-columns: 1fr;
+    column-gap: 4rem;
 }
 
 .entrada{
@@ -198,4 +223,95 @@ img{
     background-color: var(--negro);
     padding-bottom: 3rem;
     margin-top: 4rem;
+}
+
+/*CSS Formulario*/
+
+.formulario{
+    background-color: var(--negro);
+    width: min(60rem, 100%);
+    margin: 0 auto;
+    padding: 2rem;
+    border-radius: 1rem;
+}
+
+.formulario fieldset
+{
+    border: none;
+}
+
+.formulario legend{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: var(--blanco);
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+
+.campos{
+    margin: 1rem;
+}
+
+.campo label{
+    color: var(--blanco);
+    font-weight: 700;
+    margin-bottom: .5rem;
+    display: block;
+}
+
+.input-text{
+    width: 100%;
+    border:none;
+    padding: 1rem;
+    border-radius: .5rem;
+}
+
+.formulario__boton{
+    background-color: var(--primario);
+    color:var(--blanco);
+    padding: 1rem 3rem;
+    margin-top: 3rem;
+    font-size: 2rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 400;
+    border-radius: .5rem;
+    width: 100%;
+    text-align: center;
+    border: none;
+}
+.formulario__boton:hover{
+    cursor:pointer;
+    background-color: var(--blanco);
+    color:var(--negro);
+}
+
+
+.formulario-select{
+    width: 100%;
+    border-radius: .5rem;
+    border: .2rem solid var(--gris);
+    background-color: var(--blanco);
+    color: var(--negro);
+    font-size: 2rem;
+    font-family: var(--fuenteprincipal);
+    padding: 1rem;
+}
+
+.error{
+    background-color: var(--error);
+    color: var(--blanco);
+    padding: .5rem;
+    border-radius: .5rem;
+    text-transform: uppercase;
+}
+
+.correcto{
+    background-color: var(--correcto);
+    color: var(--blanco);
+    padding: .5rem;
+    border-radius: .5rem;
+    text-transform: uppercase;
 }
