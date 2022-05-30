@@ -1,65 +1,34 @@
-const datos = {
-    nombre : '',
-    gamerTag : '',
-    raza : '',
-    correo : '',
-    mensaje : ''
-}
+//querySelector
+// const titulo = document.querySelector('.header__texto h2');
+// titulo.textContent = "Texto desde JS";
+// titulo.classList.add('header__texto--secundario');
+// console.log(titulo);
+// titulo.classList.remove('header__texto--secundario');
+// console.log(titulo);
 
+//querySelectorAll
+// const enlaces = document.querySelectorAll('.navegacion a');
+// console.log(enlaces[0]);
 
-const formulario = document.querySelector('.formulario');
+//crear elementos con JS
+// const nuevoEnlace = document.createElement('A');
+// const navegacion = document.querySelector('.navegacion');
+// console.log(navegacion);
+// nuevoEnlace.href="#";
+// nuevoEnlace.classList.add('navegacion__enlace');
+// nuevoEnlace.textContent = 'Otro enlace';
 
-const nombre = document.querySelector('#nombre');
-const gamerTag = document.querySelector('#gamerTag');
-const raza = document.querySelector('#raza');
-const correo = document.querySelector('#correo');
-const mensaje = document.querySelector('#mensaje');
+// navegacion.appendChild(nuevoEnlace);
 
-nombre.addEventListener('input',leerTexto);
-gamerTag.addEventListener('input',leerTexto);
-raza.addEventListener('change',leerTexto);
-correo.addEventListener('input',leerTexto);
-mensaje.addEventListener('input',leerTexto);
+// console.log(nuevoEnlace);
 
-
-
-formulario.addEventListener('submit', function(evento){
-    evento.preventDefault();
-    const {nombre, gamerTag,raza,correo,mensaje} = datos;
-    if(nombre === '' || gamerTag === '' || correo === '' || raza === '' || mensaje === ''){
-        mostrarError('¡Todos los campos son obligatorios!');
-        return;
-    }
-    envioCorrecto('Los datos han sido enviados correctamentes');
+const boton = document.querySelector('#boton1');
+boton.addEventListener('click',function(){
+    console.log('Diste click en el botón 1');
 });
-function leerTexto(e){
-    datos[e.target.id] = e.target.value;
-}
-function mostrarError(mensaje){
-    const errorFormulario = document.createElement('P');
-    errorFormulario.textContent = mensaje;
-    errorFormulario.classList.add('error');
-    errorFormulario.classList.add('centrar-texto');
-    setTimeout(() => {
-        errorFormulario.remove();
-    },5000);
-    formulario.appendChild(errorFormulario);
-}
+const boton2 = document.querySelector('#boton2');
+boton2.addEventListener('click',function(){
+    console.log('Diste click en el botón 2');
+});
+//console.log(boton);
 
-function envioCorrecto(mensaje){
-    const alerta = document.createElement('P');
-    alerta.textContent = mensaje;
-    alerta.classList.add('correcto');
-    alerta.classList.add('centrar-texto');
-    formulario.appendChild(alerta);
-    
-    setTimeout(()=> {
-        alerta.remove();
-    },5000)
-}
-
-
-function monstrarAlerta(mensaje){
-    const alerta = document.createElement('P');
-    alerta.textContent
-}

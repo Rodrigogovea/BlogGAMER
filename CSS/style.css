@@ -145,6 +145,9 @@ img{
     color: var(--blanco);
     text-transform: uppercase;
 }
+.navegacion__enlace:hover{
+    color: var(--correcto);
+}
 
 @media (min-width:768px){
     .contenido-principal{
@@ -194,6 +197,10 @@ img{
 
 .boton--secundario{
     background-color: var(--primario);
+}
+.boton--primario:hover,
+.boton--secundario:hover{
+    color: var(--correcto);
 }
 
 .eventos{
@@ -263,7 +270,7 @@ img{
 
 .input-text{
     width: 100%;
-    border:none;
+    border: none;
     padding: 1rem;
     border-radius: .5rem;
 }
